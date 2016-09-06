@@ -42,15 +42,20 @@ a better resource I have still added value to the users experience.  The
 question might also come up because the user needs more context around a 
 resource in order to use it.  
 
-A possible extension then of this though is if we combined this with the 
-search parameters that the users is using.  Then knowing other possible 
-actionable relations to a local resource could enable deeper relations.  
-So, a user is a looking at a resource he or she arrived at from a search 
+A possible extension  of this is if we combined this with the 
+search parameters being used.  So, a user is a looking at a local 
+resource he or she arrived at from a search 
 term or set of parameters.  Knowing connections to other providers we can 
 look for search options that match those terms used locally.  The results of 
 remote searches can then be combined with static context data and presented 
 to the user as other possible resources of interest.  One can easily imaging 
-connections to GeoDeepDive or DataOne as possible options.
+connections to GeoDeepDive or DataOne as possible options.  Many of these places 
+already have API's.  Being able to systematically harvest them into a graph and 
+potentially match parameters to them.  All this sounds a lot like what is 
+done with Swagger documents and client building so looking there is a good
+place to start.  Much of the journey may be done.  Also projects that work on 
+query building for example are another set of resources to review.  We don't want
+to look anyting like a broker though.  If we end up there just quit.
 
 
 #### What this is not
