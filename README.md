@@ -3,26 +3,70 @@
 ###### An experiment to see if a simple tool can be built to provide small individual data providers a larger context for their data holdings from a defined community of providers that describe their services and capabilities 
 
 #### Intro
-The initial approach is a simple crawler that will walk through a whitelist (later add hypermedia driven walking) of domains.  On these domains we look favor a file provided in a CDF blessed schema listing information about participating CDF domains and their data holdings.  CDF is initially recommending the content of these files to be around services and capabilities (whatever that means...  I'll try and fill in more on that later).
+The initial approach is a simple crawler that will walk through a whitelist
+(later add hypermedia driven walking) of domains.  On these domains we look
+for a file provided in a CDF blessed schema listing information about
+participating CDF domains and their data holdings.  CDF is initially 
+recommending the content of these files to be around services and capabilities
+(whatever that means...  I'll try and fill in more on that later).
 
-My personal take on this that I want to be able to be able to build a network of like minded sites around my domains.  For me, these would be mostly in the paleo-geosciences.  If I could pull data types, resource types/classes, vocabularies (SKOS, OWL mainly) and perhaps some service descriptions like Swagger. I might be able to do something with these to build a domain "context" that could provide value to my users.   This is expected to be different from a direct resource to resource relation.  Rather this is likely more like fuzzy connection based around attributes of resources or overlaps in various contexts (vocabularies) of given resources.  
+My personal take on this that I want to be able to be able to build a network
+of like minded sites around my domains.  For me, these would be mostly in 
+the paleo-geosciences.  If I could pull data types, resource types/classes,
+vocabularies (SKOS, OWL mainly) and perhaps some service descriptions like 
+Swagger I might be able to do something with these to build a domain "context"
+that could provide value to my users.   This is expected to be different 
+from a direct resource to resource relation.  Rather this is likely more 
+like fuzzy connection based around attributes of resources or overlaps in 
+various contexts (vocabularies) of given resources.  
 
 #### Context?
-My interest in this project to actually get some local value out of what normally just turns into another monolithic master metadata catalog (M3C) (trademark pending).   Many of us are starting to extract data type and resource data in our data holdings.  Given that, are there practices we could use locally that look out into our known community of practice and find useful connections?
+My interest in this project is to actually get some local value out of
+what normally just turns into another monolithic master metadata 
+catalog (M3C) (trademark pending).   Many of us are starting to extract 
+data type and resource data from our data holdings.  Given that, are there 
+practices we could use locally that look out into our known community of 
+practice and find useful connections?
 
-Given a resource I am presenting to a user, can I find potential relation outside my own context (site) that I can present to the user.   Could I even present this to a user as a separate view on my resource.   Can I, with acceptable effort, answer the question "what else is there that is potentially related to what I am looking at now".
+Given a resource I am presenting to a user, can I find potential relation 
+outside my own context (site) that I can present to the user.   Could I 
+even present this to a user as a separate view on my resource.   Can I, 
+with acceptable effort, answer the question "what else is there that is 
+potentially related to what I am looking at now".  GeoLink has been working 
+on this as well.  What is proposed here is a complement to that, though 
+perhaps someting that can and should be just incorporated into GeoLink.
 
-This question might arise because my resource isn't really what the user is after.  If I can then at least provide the benefit of getting them to a better resource I have still added value to the users experience.  The question might also come up because the user needs more context around a resource in order to use it.  
+This question might arise because my resource isn't really what the user 
+is after.  If I can then at least provide the benefit of getting them to 
+a better resource I have still added value to the users experience.  The 
+question might also come up because the user needs more context around a 
+resource in order to use it.  
 
-A possible extension then of this though is if we combined this with the search parameters that the users is using.  Then knowing other possible actionable relations to a local resource could enable deeper relations.  So, a user is a looking at a resource he or she arrived at from a search term or set of parameters.  Knowing connections to other providers we can look for search options that match those terms used locally.  The results of remote searches can then be combined with static context data and presented to the user as other possible resources of interest.  One can easily imaging connections to GeoDeepDive or DataOne as possible options.
+A possible extension then of this though is if we combined this with the 
+search parameters that the users is using.  Then knowing other possible 
+actionable relations to a local resource could enable deeper relations.  
+So, a user is a looking at a resource he or she arrived at from a search 
+term or set of parameters.  Knowing connections to other providers we can 
+look for search options that match those terms used locally.  The results of 
+remote searches can then be combined with static context data and presented 
+to the user as other possible resources of interest.  One can easily imaging 
+connections to GeoDeepDive or DataOne as possible options.
 
 
 #### What this is not
-I don't have the time or resources to do a full harvester with scheduled visits, difference mapping, etc, etc.  Groups like DataOne and others are far more capable to address that larger scale task.  I'm also not set up to address the type of interfaces people would want on such data.   This project is to see if a small group can use a lightweight tool to help provide context to local data from small defined community of other providers exposing information this way.   
+I don't have the time or resources to do a full harvester with scheduled 
+visits, difference mapping, etc, etc.  Groups like DataOne and others 
+are far more capable to address that larger scale task.  I'm also not 
+set up to address the type of interfaces people would want on such data.   
+This project is to see if a small group can use a lightweight tool to help 
+provide context to local data from small defined community of other providers 
+exposing information this way.   
 
 #### Code 
-The main.go program is a just a copy of the of FetchBot example from github.com/PuerkitoBio/fetchbot .
-Likely simple.go is also.  From these base codes I hope to modify them to address my goals.
+The main.go program is a just a copy of the of FetchBot example from 
+github.com/PuerkitoBio/fetchbot .
+Likely simple.go is also.  From these base codes I hope to modify 
+them to address my goals.
 
 The modifications are easy, read the body, look for links to a document
 types associated with the CDF document.  Read, validate and parse that document
