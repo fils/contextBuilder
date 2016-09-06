@@ -30,3 +30,13 @@ and route the various elements of that document to functions that then fetch
 further document to build out the context graph. The end results will hopefully 
 be a simple RDF graphs that can be used locally to give further context to hosted 
 data. 
+
+It might be nice too if we had a means to locate the file(s) of interest via mime type. 
+Following the OpenSearch pattern with something like:
+
+```
+<link type="application/coalitiondatafacilities+xml" rel="notsurebestrelvalue" title="SiteX" href="http://eaxmple.net/cdf.xml" />
+```
+
+Or similar for JSON-LD formats. 
+
