@@ -2,13 +2,60 @@
 
 ###### An experiment to see if a simple tool can be built to provide small individual data providers a larger context for their data holdings from a defined community of providers that describe their services and capabilities 
 
-#### Intro
+
+#### Foundation thoughts 
+The following items list a few thoughts and ideas that form the base for this experiment:
+
+- A site should describe itself.  In the same way a software library exposes APIs or interfaces
+ a web site should too.  There exist ways to do some of this now: swagger, void, opensearch, etc
+- Arguably things like re3data descriptions documents or others are also part of this approach as
+ well.  Providing a metadata foundation for the services and resources.
+- A possible  gap many see are data types, units, etc.  Other groups are working on ontologies and
+ approaches for data type description and exposure.  These should be followed and used to fill in this gap.
+- What we really lack is an index/directory of these descriptions, something like a manifest file.
+  One could argue that index.html is the manifest and simple application of HTML practices allow 
+  for discovery of these.  OpenSearch does this and something like 
+
+```
+<link type="application/earthcubecdf+xml" rel="notSureOfBestRelVal" title="SiteX" href="http://eaxmple.net/cdf.xml" />
+```  
+
+could be used to address this.
+
+An alternative approach is something like JSON-LD (ref: http://json-ld.org/)  which would allow 
+context and possible connection to hypermedia approaches (ref: http://www.hydra-cg.com/).  This 
+JSON-LD file provides a more expressive document that could still be initially linked from index.html.
+
+Either approach works and both have trade offs.  At first I will likely play with both to 
+see which one resonates with me.  
+
+The question is can one take all these various documents that already exist and weave them together
+ into something useful.  Where useful is to measure them against a set of functions a domain needs.  
+
+Some of my personal use cases are:
+
+- How to connect and exchange data of interest with Neotoma
+- this 
+
+Just a questions I have (and there are many)
+
+- do I know how to match my query terms to remote terms
+- do I know how to relate data types and measurements from my resources to remote resources
+- can I collect resources of interest from a remote site to correlate with my resources?
+
+weaving is aided by semantics..  again, opportunity perhaps.  Does swagger allow for injecting 
+semantics into the description?  Is there a JSON-LD version of swagger for example.  
+ 
+
+#### Goals
 The initial approach is a simple crawler that will walk through a whitelist
 (later add hypermedia driven walking) of domains.  On these domains we look
 for a file provided in a CDF blessed schema listing information about
 participating CDF domains and their data holdings.  CDF is initially 
 recommending the content of these files to be around services and capabilities
 (whatever that means...  I'll try and fill in more on that later).
+
+Later I would hope that I could ditch the crawler aspect and just pull the needed material from a reliable indexer service.
 
 My personal take on this that I want to be able to be able to build a network
 of like minded sites around my domains.  For me, these would be mostly in 
@@ -34,7 +81,7 @@ even present this to a user as a separate view on my resource.   Can I,
 with acceptable effort, answer the question "what else is there that is 
 potentially related to what I am looking at now".  GeoLink has been working 
 on this as well.  What is proposed here is a complement to that, though 
-perhaps someting that can and should be just incorporated into GeoLink.
+perhaps something that can and should be just incorporated into GeoLink.
 
 This question might arise because my resource isn't really what the user 
 is after.  If I can then at least provide the benefit of getting them to 
@@ -55,7 +102,7 @@ potentially match parameters to them.  All this sounds a lot like what is
 done with Swagger documents and client building so looking there is a good
 place to start.  Much of the journey may be done.  Also projects that work on 
 query building for example are another set of resources to review.  We don't want
-to look anyting like a broker though.  If we end up there just quit.
+to look anything like a broker though.  If we end up there just quit.
 
 
 #### What this is not
@@ -84,8 +131,8 @@ It might be nice too if we had a means to locate the file(s) of interest via mim
 Following the OpenSearch pattern with something like:
 
 ```
-<link type="application/coalitiondatafacilities+xml" rel="notsurebestrelvalue" title="SiteX" href="http://eaxmple.net/cdf.xml" />
-```
+<link type="application/earthcubecdf+xml" rel="notSureOfBestRelVal" title="SiteX" href="http://eaxmple.net/cdf.xml" />
+``` 
 
 Or similar for JSON-LD formats. 
 
