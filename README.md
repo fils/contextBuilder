@@ -24,7 +24,8 @@ could be used to address this.
 
 An alternative approach is something like JSON-LD (ref: http://json-ld.org/)  which would allow 
 context and possible connection to hypermedia approaches (ref: http://www.hydra-cg.com/).  This 
-JSON-LD file provides a more expressive document that could still be initially linked from index.html.
+JSON-LD file provides a more expressive document that could still be initially linked or 
+referenced from index.html.
 
 Either approach works and both have trade offs.  At first I will likely play with both to 
 see which one resonates with me.  

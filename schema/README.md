@@ -30,3 +30,9 @@ I've focused on the use of JSON-LD for this test for several reasons.
 I could use a JSON store (MongoDB) or map into a KV store (BoltDB) and 
 work from there.   Also easy to build full text indexes from JSON-LD
 
+## ToDo
+
+* add into the JSON-LD links to things like git repos and onotosft landing pages.
+(need to see if these are machine readable)
+* Need to look at what is going on in ESIP and RDA that impact the approach
+CDF is trying to take here  (points of contact, invite them to CDF meeting)
