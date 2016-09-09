@@ -8,32 +8,27 @@
         }
     },
     "@graph": [{
-            "@id": "http://opencoredata.org/cdfdescriptor",
-            "@type": "eccdf:Repository",
-            "eccdf:hasServices": "http://opencoredata.org/repository/services",
-            "eccdf:hasSemantics": "http://opencoredata.org/repository/void"
-        }, {
-            "@id": "http://opencoredata.org/apidocs.json",
-            "@type": "eccdf:Services",
-            "dc:creator": "Acme Geosciences (make UID?)",
-            "dc:description": "A swagger based description document for OCD services",
-            "dc:title": "Acme services description"
-        }, {
-            "@id": "http://opencoredata.org/common/rdf/void.ttl",
-            "@type": "eccdf:Void",
-            "dc:creator": "Acme Geosciences (make UID?)",
-            "dc:description": "An Void based description document for semantic relations and SPARQL.",
-            "dc:title": "Acme Void"
-        },
-        {
-            "@id": "http://example.org/facility/iris",
-            "@type": "eccdf:Facility",
-            "eccdf:facilityname": "IRIS Data Management Center",
-            "eccdf:url": "ds.iris.edu",
-            "eccdf:mission": "mission statement here",
-            "eccdf:domain": "eccdf:Seismology",
-            "eccdf:staff": "24",
-            "eccdf:API": ["are mostly http based Restful web services", "Support for email based requests persists but uses web services on the backend transparent to the user"]
-        }
-    ]
+        "@id": "http://example.org/facility/iris",
+        "@type": "eccdf:Facility",
+        "eccdf:facilityname": "IRIS Data Management Center",
+        "eccdf:url": "ds.iris.edu",
+        "eccdf:mission": "mission statement here",
+        "eccdf:domain": "eccdf:Seismology",
+        "eccdf:staff": "24",
+        "eccdf:API": ["are mostly http based Restful web services", "Support for email based requests persists but uses web services on the backend transparent to the user"],
+        "eccdf:hasServices": "http://opencoredata.org/repository/services",
+        "eccdf:hasSemantics": "http://opencoredata.org/repository/void"
+    }, {
+        "@id": "http://opencoredata.org/apidocs.json",
+        "@type": "eccdf:Services",
+        "dc:creator": "Acme Geosciences (make UID?)",
+        "dc:description": "A swagger based description document for OCD services",
+        "dc:title": "Acme services description"
+    }, {
+        "@id": "http://opencoredata.org/common/rdf/void.ttl",
+        "@type": "eccdf:Void",
+        "dc:creator": "Acme Geosciences (make UID?)",
+        "dc:description": "An Void based description document for semantic relations and SPARQL.",
+        "dc:title": "Acme Void"
+    }]
 }
