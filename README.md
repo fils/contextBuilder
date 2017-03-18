@@ -3,6 +3,11 @@
 ###### An experiment to see if a simple tool can be built to provide small individual data providers a larger context for their data holdings from a defined community of providers that describe their services and capabilities 
 
 
+#### For review
+* http://jonathanmh.com/web-scraping-golang-goquery/
+* https://www.hugopicado.com/2016/09/26/simple-data-processing-pipeline-with-golang.html
+
+
 #### Foundation thoughts 
 The following items list a few thoughts and ideas that form the base for this experiment:
 
