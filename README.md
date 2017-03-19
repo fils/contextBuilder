@@ -1,4 +1,4 @@
-# ContextBuilder
+# contextBuilder
 
 ###### An experiment to see if a simple tool can be built to provide small individual data providers a larger context for their data holdings from a defined community of providers that describe their services and capabilities 
 
