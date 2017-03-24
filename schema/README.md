@@ -1,5 +1,11 @@
 # Schema notes
 
+## NOTE
+
+Much of what is here should be replaced by work being done at https://github.com/fils/CDFRegistryWG 
+
+## About
+
 My first goal is to simply build a JSON-LD file that points to other records.
 My first collection of these being:
 
