@@ -16,8 +16,8 @@ func main() {
 	queue := f.Start()
 
 	var domains []string
-	domains = readWhiteList("whitelist_localtest.txt")
-	// domains = readWhiteList("whitelist.txt")
+	// domains = readWhiteList("whitelist_localtest.txt")
+	domains = readWhiteList("whitelist.txt")
 
 	queue.SendStringGet(domains...) // note use of variadic parameter on this function
 	queue.Close()
@@ -59,9 +59,20 @@ func goGetSchemaorg(ctx *fetchbot.Context, res *http.Response, err error) {
 		return
 	}
 
-	doc.Find("script").Each(func(i int, s *goquery.Selection) { // ? script[type="application/ld+json"]
-		if s.HasClass("cdfregistry") {
+	//  Version that looks for class type
+	// doc.Find("script").Each(func(i int, s *goquery.Selection) { // ? script[type="application/ld+json"]
+	// 	if s.HasClass("cdfregistry") {
+	// 		fmt.Printf("%s\n", s.Text()) //  or send off to a scheme.org parser (JSONLD parser)
+	// 	}
+	// })
+
+	// Version that just looks for script type application/ld+json
+	doc.Find("script").Each(func(i int, s *goquery.Selection) {
+		// s.Has()
+		val, _ := s.Attr("type")
+		if val == "application/ld+json" {
 			fmt.Printf("%s\n", s.Text()) //  or send off to a scheme.org parser (JSONLD parser)
+			// convert to RDF (n-triples here and print, ready for loading)
 		}
 	})
 
