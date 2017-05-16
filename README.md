@@ -142,3 +142,57 @@ Following the OpenSearch pattern with something like:
 
 Or similar for JSON-LD formats. 
 
+
+#### Harvesting and working with JSON-LD and triples
+
+Ref RDF_pro  at http://rdfpro.fbk.eu/
+```
+Fils:output dfils$ ~/bin/rdfpro/rdfpro @r -w bco-dmoorg.nq wwwopentopographyorg.nq opencoredataorg.nq wwwunavcoorg.nq  @w combined.nq
+```
+
+#### Cayley hacking
+
+Gizmo
+```
+g.V().Has("<http://schema.org/name>").Tag("source").Out().Tag("target").All()
+
+g.V().Has("<http://schema.org/potentialAction>").Tag("source")
+.Out("<http://schema.org/potentialAction>")
+.Out("http://schema.org/target").Out("http://schema.org/description").Tag("target").All()
+
+
+repository.Tag("source").Out("<http://schema.org/potentialAction>")
+.Out("<http://schema.org/target>").Out("<http://schema.org/description>")
+.Tag("target").All()
+
+
+var hasName =   g.V().Has("<http://schema.org/name>")
+var hasAction = g.V().Has("<http://schema.org/potentialAction>")
+
+var repos = hasName.Intersect(hasAction).Out("<http://schema.org/name>").Unique()
+
+var targets = repos.Tag("source").In().Out("<http://schema.org/potentialAction>")
+.Out("<http://schema.org/target>").Out("<http://schema.org/description>")
+.Tag("target")
+
+var members = repos.Tag("source").In().Out("<http://schema.org/memberOf>")
+.Out("<http://schema.org/programName>").Tag("target")
+
+targets.Union(members).All()
+
+```
+
+
+GraphQL
+```
+{
+  nodes{
+    <http://schema.org/name>, <http://schema.org/potentialAction>  {
+      <http://schema.org/target> { 
+       <http://schema.org/description> 
+      }
+  	}
+  }
+}
+```
+

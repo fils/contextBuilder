@@ -1,0 +1,41 @@
+_:b0 <http://schema.org/contactPoint> _:b1 .
+_:b0 <http://schema.org/funder> _:b2 .
+_:b0 <http://schema.org/memberOf> _:b3 .
+_:b0 <http://schema.org/name> "BCO-DMO" .
+_:b0 <http://schema.org/potentialAction> _:b5 .
+_:b0 <http://schema.org/potentialAction> _:b7 .
+_:b0 <http://schema.org/potentialAction> _:b9 .
+_:b0 <http://schema.org/url> <http://www.bco-dmo.org> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b1 <http://schema.org/contactType> "technical support" .
+_:b1 <http://schema.org/email> "ashepherd@whoi.edu" .
+_:b1 <http://schema.org/name> "Adam Shepherd" .
+_:b1 <http://schema.org/url> <http://orcid.org/0000-0003-4486-9448> .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> .
+_:b10 <http://schema.org/description> "OAI-PMH Endpoint" .
+_:b10 <http://schema.org/httpMethod> "GET" .
+_:b10 <http://schema.org/urlTemplate> "http://www.bco-dmo.org/services/oai" .
+_:b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .
+_:b2 <http://schema.org/name> "NSF" .
+_:b2 <http://schema.org/url> <http://www.nsf.gov> .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b3 <http://schema.org/hostingOrganization> _:b4 .
+_:b3 <http://schema.org/programName> "EarthCube CDF Registry" .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ProgramMembership> .
+_:b4 <http://schema.org/name> "RE3Data" .
+_:b4 <http://schema.org/url> <http://www.re3data.org> .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b5 <http://schema.org/target> _:b6 .
+_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .
+_:b6 <http://schema.org/description> "SPARQL Endpoint" .
+_:b6 <http://schema.org/httpMethod> "GET" .
+_:b6 <http://schema.org/urlTemplate> "http://lod.bco-dmo.org/sparql" .
+_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .
+_:b7 <http://schema.org/target> _:b8 .
+_:b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .
+_:b8 <http://schema.org/description> "VoID Description" .
+_:b8 <http://schema.org/httpMethod> "GET" .
+_:b8 <http://schema.org/urlTemplate> "http://www.bco-dmo.org/.well-known/void" .
+_:b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .
+_:b9 <http://schema.org/target> _:b10 .
+_:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .

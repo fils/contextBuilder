@@ -1,0 +1,24 @@
+_:b0 <http://schema.org/contactPoint> _:b1 .
+_:b0 <http://schema.org/funder> _:b2 .
+_:b0 <http://schema.org/memberOf> _:b3 .
+_:b0 <http://schema.org/name> "OpenTopography" .
+_:b0 <http://schema.org/potentialAction> _:b5 .
+_:b0 <http://schema.org/sameAs> <http://www.re3data.org/repository/r3d100010655> .
+_:b0 <http://schema.org/url> <http://www.opentopography.org> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b1 <http://schema.org/contactType> "technical support" .
+_:b1 <http://schema.org/email> "info@opentopography.org" .
+_:b1 <http://schema.org/url> <http://www.opentopography.org/contact> .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> .
+_:b2 <http://schema.org/name> "National Science Foundation" .
+_:b2 <http://schema.org/url> <http://www.nsf.gov> .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b3 <http://schema.org/hostingOrganization> _:b4 .
+_:b3 <http://schema.org/programName> "EarthCube CDF Registry" .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ProgramMembership> .
+_:b4 <http://schema.org/name> "RE3Data" .
+_:b4 <http://schema.org/url> <http://www.re3data.org> .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b5 <http://schema.org/query-input> "required" .
+_:b5 <http://schema.org/target> "http://opentopo.sdsc.edu/datasets?search={query}" .
+_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .
