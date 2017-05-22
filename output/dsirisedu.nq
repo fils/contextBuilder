@@ -1,0 +1,70 @@
+_:b0 <http://schema.org/contactPoint> _:b1 .
+_:b0 <http://schema.org/mainEntityOfPage> _:b2 .
+_:b0 <http://schema.org/mainEntityOfPage> _:b3 .
+_:b0 <http://schema.org/mainEntityOfPage> _:b4 .
+_:b0 <http://schema.org/memberOf> _:b5 .
+_:b0 <http://schema.org/name> "Incorporated Research Institutions for Seismology IRIS" .
+_:b0 <http://schema.org/potentialAction> _:b11 .
+_:b0 <http://schema.org/potentialAction> _:b13 .
+_:b0 <http://schema.org/potentialAction> _:b15 .
+_:b0 <http://schema.org/potentialAction> _:b7 .
+_:b0 <http://schema.org/potentialAction> _:b9 .
+_:b0 <http://schema.org/sameAs> <http://www.re3data.org/repository/r3d100010268> .
+_:b0 <http://schema.org/url> <http://www.iris.edu> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b1 <http://schema.org/contactType> "technical support" .
+_:b1 <http://schema.org/email> "mike@iris.washington.edu" .
+_:b1 <http://schema.org/name> "Mike Stults" .
+_:b1 <http://schema.org/url> <http://iris.edu> .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> .
+_:b10 <http://schema.org/description> "Data Select WADL description document" .
+_:b10 <http://schema.org/httpMethod> "GET" .
+_:b10 <http://schema.org/urlTemplate> "http://service.iris.edu/fdsnws/dataselect/1/application.wadl" .
+_:b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .
+_:b11 <http://schema.org/target> _:b12 .
+_:b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .
+_:b12 <http://schema.org/description> "InterMagnet Open API Swagger 2.0 description document" .
+_:b12 <http://schema.org/httpMethod> "GET" .
+_:b12 <http://schema.org/urlTemplate> "http://geows.ds.iris.edu/geows-uf/intermagnet/1/v2/swagger" .
+_:b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .
+_:b13 <http://schema.org/target> _:b14 .
+_:b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .
+_:b14 <http://schema.org/description> "WovoDat Open API Swagger 2.0 description document" .
+_:b14 <http://schema.org/httpMethod> "GET" .
+_:b14 <http://schema.org/urlTemplate> "http://geows.ds.iris.edu/geows-uf/wovodat/1/v2/swagger" .
+_:b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .
+_:b15 <http://schema.org/target> _:b16 .
+_:b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .
+_:b16 <http://schema.org/description> "UTEPGravityMag Open API Swagger 2.0 description document" .
+_:b16 <http://schema.org/httpMethod> "GET" .
+_:b16 <http://schema.org/urlTemplate> "http://geows.ds.iris.edu/geows-uf/utepgravitymag/1/v2/swagger" .
+_:b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .
+_:b2 <http://schema.org/description> "The DMC collects and archives a number of different types of data." .
+_:b2 <http://schema.org/fileformat> "HTML" .
+_:b2 <http://schema.org/keywords> "Time series, event, historical, metadata" .
+_:b2 <http://schema.org/url> <http://ds.iris.edu/ds/nodes/dmc/data/types/> .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DigitalDocument> .
+_:b3 <http://schema.org/description> "Data products derived from raw data are produced both by the scientific community and the IRIS DMC" .
+_:b3 <http://schema.org/fileformat> "HTML" .
+_:b3 <http://schema.org/keywords> "Data Services Products" .
+_:b3 <http://schema.org/url> <http://ds.iris.edu/ds/products/> .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DigitalDocument> .
+_:b4 <http://schema.org/description> "IRIS DMC Web Services" .
+_:b4 <http://schema.org/fileformat> "HTML" .
+_:b4 <http://schema.org/keywords> "Web Services" .
+_:b4 <http://schema.org/url> <http://service.iris.edu/> .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DigitalDocument> .
+_:b5 <http://schema.org/hostingOrganization> _:b6 .
+_:b5 <http://schema.org/programName> "EarthCube CDF Registry" .
+_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ProgramMembership> .
+_:b6 <http://schema.org/name> "RE3Data" .
+_:b6 <http://schema.org/url> <http://www.re3data.org> .
+_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b7 <http://schema.org/target> _:b8 .
+_:b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .
+_:b8 <http://schema.org/description> "Station WADL description document" .
+_:b8 <http://schema.org/httpMethod> "GET" .
+_:b8 <http://schema.org/urlTemplate> "http://service.iris.edu/fdsnws/station/1/application.wadl" .
+_:b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .
+_:b9 <http://schema.org/target> _:b10 .
+_:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .

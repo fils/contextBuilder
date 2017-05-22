@@ -147,7 +147,12 @@ Or similar for JSON-LD formats.
 
 Ref RDF_pro  at http://rdfpro.fbk.eu/
 ```
-Fils:output dfils$ ~/bin/rdfpro/rdfpro @r -w bco-dmoorg.nq wwwopentopographyorg.nq opencoredataorg.nq wwwunavcoorg.nq  @w combined.nq
+~/bin/rdfpro/rdfpro @r -w bco-dmoorg.nq wwwopentopographyorg.nq opencoredataorg.nq wwwunavcoorg.nq dsirisedu.nq @w combined.nq
+```
+
+Open with cayley
+```
+cayley http --dbpath=./output/combined.nq
 ```
 
 #### Cayley hacking
