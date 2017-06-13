@@ -1,0 +1,27 @@
+id,source,target
+OGC Catalog Service for the Web (CSW),OpenTopography,OGC Catalog Service for the Web (CSW)
+VoID document,Open Core Data,VoID document
+Swagger 1.2 description document,Open Core Data,Swagger 1.2 description document
+SPARQL endpoint,Open Core Data,SPARQL endpoint
+GPS REST services custom documentation,UNAVCO,GPS REST services custom documentation
+SAR Federated REST Services custom documentation,UNAVCO,SAR Federated REST Services custom documentation
+Swagger 2.0 description document,UNAVCO,Swagger 2.0 description document
+Swagger 2.0 description document,UNAVCO,Swagger 2.0 description document
+SPARQL Endpoint,BCO-DMO,SPARQL Endpoint
+VoID Description,BCO-DMO,VoID Description
+OAI-PMH Endpoint,BCO-DMO,OAI-PMH Endpoint
+InterMagnet Open API Swagger 2.0 description document,Incorporated Research Institutions for Seismology IRIS,InterMagnet Open API Swagger 2.0 description document
+WovoDat Open API Swagger 2.0 description document,Incorporated Research Institutions for Seismology IRIS,WovoDat Open API Swagger 2.0 description document
+UTEPGravityMag Open API Swagger 2.0 description document,Incorporated Research Institutions for Seismology IRIS,UTEPGravityMag Open API Swagger 2.0 description document
+Station WADL description document,Incorporated Research Institutions for Seismology IRIS,Station WADL description document
+Data Select WADL description document,Incorporated Research Institutions for Seismology IRIS,Data Select WADL description document
+OGC Web Feature Service (WFS) Description,Rolling Deck to Repository (R2R),OGC Web Feature Service (WFS) Description
+Vocabulary of Interlinked Datasets (VoID) Description,Rolling Deck to Repository (R2R),Vocabulary of Interlinked Datasets (VoID) Description
+RDF Query Language (SPARQL) Endpoint,Rolling Deck to Repository (R2R),RDF Query Language (SPARQL) Endpoint
+OGC Catalog Service for Web (CSW) Description,Rolling Deck to Repository (R2R),OGC Catalog Service for Web (CSW) Description
+EarthCube CDF Registry,OpenTopography,EarthCube CDF Registry
+EarthCube CDF Registry,Open Core Data,EarthCube CDF Registry
+EarthCube CDF Registry,UNAVCO,EarthCube CDF Registry
+EarthCube CDF Registry,BCO-DMO,EarthCube CDF Registry
+EarthCube CDF Registry,Incorporated Research Institutions for Seismology IRIS,EarthCube CDF Registry
+EarthCube CDF Registry,Rolling Deck to Repository (R2R),EarthCube CDF Registry

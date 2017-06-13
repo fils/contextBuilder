@@ -1,0 +1,108 @@
+{
+    "result": [{
+            "id": "SPARQL Endpoint",
+            "source": "BCO-DMO",
+            "target": "SPARQL Endpoint"
+        },
+        {
+            "id": "VoID Description",
+            "source": "BCO-DMO",
+            "target": "VoID Description"
+        },
+        {
+            "id": "OAI-PMH Endpoint",
+            "source": "BCO-DMO",
+            "target": "OAI-PMH Endpoint"
+        },
+        {
+            "id": "OGC Catalog Service for the Web (CSW)",
+            "source": "OpenTopography",
+            "target": "OGC Catalog Service for the Web (CSW)"
+        },
+        {
+            "id": "GPS REST services custom documentation",
+            "source": "UNAVCO",
+            "target": "GPS REST services custom documentation"
+        },
+        {
+            "id": "SAR Federated REST Services custom documentation",
+            "source": "UNAVCO",
+            "target": "SAR Federated REST Services custom documentation"
+        },
+        {
+            "id": "Swagger 2.0 description document",
+            "source": "UNAVCO",
+            "target": "Swagger 2.0 description document"
+        },
+        {
+            "id": "Swagger 2.0 description document",
+            "source": "UNAVCO",
+            "target": "Swagger 2.0 description document"
+        },
+        {
+            "id": "InterMagnet Open API Swagger 2.0 description document",
+            "source": "Incorporated Research Institutions for Seismology IRIS",
+            "target": "InterMagnet Open API Swagger 2.0 description document"
+        },
+        {
+            "id": "WovoDat Open API Swagger 2.0 description document",
+            "source": "Incorporated Research Institutions for Seismology IRIS",
+            "target": "WovoDat Open API Swagger 2.0 description document"
+        },
+        {
+            "id": "UTEPGravityMag Open API Swagger 2.0 description document",
+            "source": "Incorporated Research Institutions for Seismology IRIS",
+            "target": "UTEPGravityMag Open API Swagger 2.0 description document"
+        },
+        {
+            "id": "Station WADL description document",
+            "source": "Incorporated Research Institutions for Seismology IRIS",
+            "target": "Station WADL description document"
+        },
+        {
+            "id": "Data Select WADL description document",
+            "source": "Incorporated Research Institutions for Seismology IRIS",
+            "target": "Data Select WADL description document"
+        },
+        {
+            "id": "VoID document",
+            "source": "Open Core Data",
+            "target": "VoID document"
+        },
+        {
+            "id": "Swagger 1.2 description document",
+            "source": "Open Core Data",
+            "target": "Swagger 1.2 description document"
+        },
+        {
+            "id": "SPARQL endpoint",
+            "source": "Open Core Data",
+            "target": "SPARQL endpoint"
+        },
+        {
+            "id": "EarthCube CDF Registry",
+            "source": "BCO-DMO",
+            "target": "EarthCube CDF Registry"
+        },
+        {
+            "id": "EarthCube CDF Registry",
+            "source": "OpenTopography",
+            "target": "EarthCube CDF Registry"
+        },
+        {
+            "id": "EarthCube CDF Registry",
+            "source": "UNAVCO",
+            "target": "EarthCube CDF Registry"
+        },
+        {
+            "id": "EarthCube CDF Registry",
+            "source": "Incorporated Research Institutions for Seismology IRIS",
+            "target": "EarthCube CDF Registry"
+        },
+        {
+            "id": "EarthCube CDF Registry",
+            "source": "Open Core Data",
+            "target": "EarthCube CDF Registry"
+        }
+    ]
+}

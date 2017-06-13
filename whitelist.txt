@@ -1,5 +1,5 @@
 http://opencoredata.org
 http://www.unavco.org
 http://bco-dmo.org
-http://www.opentopography.org
 http://ds.iris.edu/files/cdfregistrywg/IRISfacility.html
+http://api.rvdata.us/cdf.html
