@@ -20,6 +20,7 @@ type RWGSchemaorg struct {
 	Context      string `json:"@context"`
 	Type         string `json:"@type"`
 	Name         string `json:"name"`
+	Description  string `json:"description"`
 	ContactPoint struct {
 		Type        string `json:"@type"`
 		Name        string `json:"name"`
@@ -114,13 +115,14 @@ func goGetSchemaorg(ctx *fetchbot.Context, res *http.Response, err error) {
 		val, _ := s.Attr("type")
 		if val == "application/ld+json" {
 			// fmt.Printf("%s\n", s.Text()) //  or send off to a scheme.org parser (JSONLD parser)
-
 			// fmt.Printf("%s\n", jsonLDToRDF(s.Text())) //  or send off to a scheme.org parser (JSONLD parser)
-			// host := strings.Replace(ctx.Cmd.URL().Host, ".", "", -1)
-			// writeFile(fmt.Sprintf("./output/%s.nq", host), jsonLDToRDF(s.Text()))
 
+			// Build RDF graphs  (blend later with RDFpro  (TODO: need to have this in code))
+			host := strings.Replace(ctx.Cmd.URL().Host, ".", "", -1)
+			writeFile(fmt.Sprintf("./output/%s.nq", host), jsonLDToRDF(s.Text()))
+
+			// Build the free text index
 			bleveIndex(s.Text())
-			// convert to RDF (n-triples here and print, ready for loading)
 		}
 	})
 }
