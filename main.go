@@ -16,6 +16,42 @@ import (
 	"github.com/kazarena/json-gold/ld"
 )
 
+// RWGDataCatalog RWG data catalog struct
+type RWGDataCatalog struct {
+	Context struct {
+		Vocab   string `json:"@vocab"`
+		Re3data string `json:"re3data"`
+	} `json:"@context"`
+	ID      string `json:"@id"`
+	Type    string `json:"@type"`
+	Dataset []struct {
+		Type        string `json:"@type"`
+		Description string `json:"description"`
+		URL         string `json:"url"`
+	} `json:"dataset"`
+	Description string `json:"description"`
+	URL         string `json:"url"`
+}
+
+// RWGDataSet RWG DataSet struct
+type RWGDataSet struct {
+	Context struct {
+		Vocab   string `json:"@vocab"`
+		Re3data string `json:"re3data"`
+	} `json:"@context"`
+	ID           string `json:"@id"`
+	Type         string `json:"@type"`
+	Description  string `json:"description"`
+	Distribution struct {
+		Type       string `json:"@type"`
+		ContentURL string `json:"contentUrl"`
+	} `json:"distribution"`
+	Keywords string `json:"keywords"`
+	Name     string `json:"name"`
+	URL      string `json:"url"`
+}
+
+// RWGSchemaorg RWG organization struct
 type RWGSchemaorg struct {
 	Context      string `json:"@context"`
 	Type         string `json:"@type"`
@@ -59,13 +95,13 @@ func main() {
 	queue := f.Start()
 
 	var domains []string
-	// domains = readWhiteList("whitelist_localtest.txt")
 	domains = readWhiteList("whitelist.txt")
 
-	queue.SendStringGet(domains...) // note use of variadic parameter on this function
+	queue.SendStringGet(domains...) // note variadic parameter on this function
 	queue.Close()
 }
 
+// readWhiteList  get a list of domains we want to search and return as a string array
 func readWhiteList(filename string) []string {
 	var domains []string
 

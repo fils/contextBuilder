@@ -153,6 +153,7 @@ Ref RDF_pro  at http://rdfpro.fbk.eu/
 Open with cayley
 ```
 cayley http --dbpath=./output/combined.nq
+./cayley http --dbpath==~/src/go/src/oceanleadership.org/contextBuilder/output/combined.nq
 ```
 
 #### Cayley hacking
