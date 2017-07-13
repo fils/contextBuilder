@@ -1,0 +1,4 @@
+http://127.0.0.1:9900/catalog/geolink
+http://127.0.0.1:9900/catalog/geolink/dataset/JRSO_holes_gl
+http://127.0.0.1:9900/catalog/geolink/dataset/JRSO_cruises_gl
+http://127.0.0.1:9900/catalog/geolink/dataset/JRSO_deployments_gl

@@ -1,0 +1,8 @@
+<http://opencoredata.org/catalog/geolink/dataset/JRSO_deployments_gl> <http://schema.org/description> "Collection of Science Party Deployment Information collected for GeoLink" .
+<http://opencoredata.org/catalog/geolink/dataset/JRSO_deployments_gl> <http://schema.org/distribution> _:b0 .
+<http://opencoredata.org/catalog/geolink/dataset/JRSO_deployments_gl> <http://schema.org/keywords> "" .
+<http://opencoredata.org/catalog/geolink/dataset/JRSO_deployments_gl> <http://schema.org/name> "Open Core Data IODP Science Party Deployment Information GeoLink Dataset" .
+<http://opencoredata.org/catalog/geolink/dataset/JRSO_deployments_gl> <http://schema.org/url> "http://opencoredata.org/catalog/geolink/dataset/JRSO_deployments_gl" .
+<http://opencoredata.org/catalog/geolink/dataset/JRSO_deployments_gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Dataset> .
+_:b0 <http://schema.org/contentUrl> "" .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DataDownload> .

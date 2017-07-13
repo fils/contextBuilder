@@ -147,7 +147,12 @@ Or similar for JSON-LD formats.
 
 Ref RDF_pro  at http://rdfpro.fbk.eu/
 ```
-~/bin/rdfpro/rdfpro @r -w bco-dmoorg.nq wwwopentopographyorg.nq opencoredataorg.nq wwwunavcoorg.nq dsirisedu.nq  apirvdataus.nq @w combined.nq
+~/bin/rdfpro/rdfpro @r -w bco-dmoorg.nq wwwopentopographyorg.nq opencoredataorg.nq wwwunavcoorg.nq dsirisedu.nq  apirvdataus.nq mvcodatawhoiedu.nq @w combined.nq
+```
+
+Convert to DOT
+```
+http://www.easyrdf.org/converter
 ```
 
 Open with cayley

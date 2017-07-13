@@ -1,0 +1,39 @@
+<http://opencoredata.org/id/facilityinfo> <http://example.org/re3data/0.1/keyword> "geoscience,oceanography, atmospheric" .
+<http://opencoredata.org/id/facilityinfo> <http://schema.org/contactPoint> _:b0 .
+<http://opencoredata.org/id/facilityinfo> <http://schema.org/description> "The MVCO is a cabled observatory consisting of a shoreside met station; a sub-sea 12m node and an air-sea interaction tower.  It provides near-realtime data for hosted reasearch projects and the public via an ftp server or JGOFS." .
+<http://opencoredata.org/id/facilityinfo> <http://schema.org/funder> _:b1 .
+<http://opencoredata.org/id/facilityinfo> <http://schema.org/logo> _:b2 .
+<http://opencoredata.org/id/facilityinfo> <http://schema.org/memberOf> _:b3 .
+<http://opencoredata.org/id/facilityinfo> <http://schema.org/name> "Marthas Vineyard Coastal Observatory" .
+<http://opencoredata.org/id/facilityinfo> <http://schema.org/potentialAction> _:b5 .
+<http://opencoredata.org/id/facilityinfo> <http://schema.org/potentialAction> _:b7 .
+<http://opencoredata.org/id/facilityinfo> <http://schema.org/url> "http://www.whoi.edu/mvco" .
+<http://opencoredata.org/id/facilityinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b0 <http://schema.org/contactType> "technical support" .
+_:b0 <http://schema.org/email> "jfredericksATwhoiDOTedu" .
+_:b0 <http://schema.org/name> "Janet Fredericks" .
+_:b0 <http://schema.org/url> "http://orcid.org/0000-0001-6143-5700" .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> .
+_:b1 <http://schema.org/name> "NSF" .
+_:b1 <http://schema.org/url> "http://www.nsf.gov" .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b2 <http://schema.org/url> "http://mvcodata.whoi.edu/images/MVCOv2.png" .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ImageObject> .
+_:b3 <http://schema.org/hostingOrganization> _:b4 .
+_:b3 <http://schema.org/programName> "EarthCube CDF Registry" .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ProgramMembership> .
+_:b4 <http://schema.org/name> "RE3Data" .
+_:b4 <http://schema.org/url> "http://www.re3data.org" .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+_:b5 <http://schema.org/target> _:b6 .
+_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .
+_:b6 <http://schema.org/description> "JGOFS description documents and data links to core and user data." .
+_:b6 <http://schema.org/httpMethod> "GET" .
+_:b6 <http://schema.org/urlTemplate> "http://mvcodata.whoi.edu/jg/dir/mvco/" .
+_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .
+_:b7 <http://schema.org/target> _:b8 .
+_:b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> .
+_:b8 <http://schema.org/description> "OGC SWE-SOS GetCapabilities:  access to Wave Parameters with QC" .
+_:b8 <http://schema.org/httpMethod> "GET" .
+_:b8 <http://schema.org/urlTemplate> "http://mvcodata.whoi.edu:8080/q2o/adcp?service=SOS&version=1.0&request=GetCapabilities" .
+_:b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> .

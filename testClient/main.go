@@ -18,7 +18,8 @@ func main() {
 }
 
 func callToJSON(phrase string) string {
-	indexPath := "/Users/dfils/src/go/src/oceanleadership.org/contextBuilder/index/rwg.bleve"
+	// indexPath := "/Users/dfils/src/go/src/oceanleadership.org/contextBuilder/index/rwg.bleve"
+	indexPath := "/Users/dfils/src/go/src/oceanleadership.org/contextBuilder/dataIndexerTest/index/rwg.bleve"
 
 	index, err := bleve.OpenUsing(indexPath, map[string]interface{}{
 		"read_only": true,
